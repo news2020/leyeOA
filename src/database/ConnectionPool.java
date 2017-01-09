@@ -78,7 +78,7 @@ public class ConnectionPool
     	try {
     	    conn =
     	       DriverManager.getConnection("jdbc:mysql://localhost/leyeoa?" +
-    	                                   "user=leye&password=leye");
+    	                                   "user=leye&password=leye&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false");
     	    
     	} catch (SQLException ex) {
     	    // handle any errors
